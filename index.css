@@ -1,0 +1,158 @@
+.header{
+    position: relative;
+    z-index: 101;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgba(143, 143, 143, 0.699),rgba(82, 77, 77, 0.699)),url(Images/image\ \(4\).jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    clip-path: polygon(0% 0% , 0% 100% , 100% 80vh , 100% 0%); 
+}
+
+.header .nav-bar{
+    position: relative;
+    top: 0;
+}
+
+.header .top {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .top .header-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-50%);
+}
+
+.header .top .main-heading p{
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-weight: 1000;
+}
+
+.header .sub-heading {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .sub-heading p{
+    font-size: 3em;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 2em;
+}
+
+.mid{
+    height: 2000px;
+    margin-top: 25px;
+}
+
+.mid hr{
+    border: rgb(157, 236, 84) 2px solid;
+    position: relative;
+    top: 150px;
+}
+
+.card{
+    margin-top: 150px;
+    width: 65vw;
+    margin-left: 15vw;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-around; */   
+}
+
+.card .card-img img{
+    /* border: 5px solid black; */
+    width: 30vw;
+    height: auto;
+    border-radius: 1em;
+    position: relative;
+    top: -15px;
+}
+
+.card .text{
+    /* border: 5px solid black; */
+    text-align: left;
+    width: 25vw;
+    height: 60vh;
+    position: relative;
+    top: -60px;
+    background-color: rgb(230, 230, 230);
+    padding: 0px 35px;
+    border-radius: 1em;
+}
+
+.card .text .heading p{  
+    width: 50%; 
+    font-size: 3em;
+    font-weight: 650;
+    background-clip: border-box;
+    background:linear-gradient(45deg,rgb(43, 255, 0),rgb(0, 255, 213));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;    
+}
+.card .text .content {
+    font-size: 1em;
+    text-align: left;
+    word-spacing: .5em;
+    line-height: 1.7em;
+    letter-spacing: .1em;
+}
+
+.contact{
+    width: 100%;
+    height: 450px;
+    background: rgba(123, 255, 0, 0.788);
+    position: relative;
+    /* clip-path: polygon(0% 20vh , 0% 100% , 100% 100% , 100% 0%); */
+    background-image: linear-gradient(180deg,rgb(24, 189, 24),rgb(64, 148, 106));
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px 5px;
+    color: rgb(241, 241, 241);
+}
+
+.contact .clovers img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 25px;
+}
+
+.contact .text{
+    margin-top: 100px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.contact .text img{
+    width: 75px;
+}
+
+.contact .text .address{
+    margin-top: 50px;
+}
+
+.contact hr{
+    position: relative;
+    top: 85%;
+    border: .1em solid rgb(235, 235, 235);
+}

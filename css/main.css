@@ -1,0 +1,43 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    text-decoration: none;
+}
+.nav-bar{
+    border-bottom-left-radius: .7em;
+    border-bottom-right-radius: .7em;
+    z-index: 100;
+    padding: 10px 0px 5px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-bar .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-bar .items a{
+    display: block;
+    color: rgb(116, 116, 116);
+    margin: 25px 20px;
+}
+
+.nav-bar .items .logo img{
+    margin: 0px 150px;
+    height: 60px;
+}

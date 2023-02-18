@@ -58,10 +58,17 @@
     margin-top: 25px;
 }
 
-.mid hr{
+.mid .top-hr hr{
     border: rgb(157, 236, 84) 2px solid;
     position: relative;
     top: 150px;
+}
+
+.mid .bottom-hr hr{
+    border: rgb(157, 236, 84) 2px solid;
+    position: relative;
+    bottom: 75px;
+    z-index: 5;
 }
 
 .card{
@@ -81,6 +88,7 @@
     border-radius: 1em;
     position: relative;
     top: -15px;
+    z-index: 10;
 }
 
 .card .text{
@@ -135,7 +143,7 @@
 }
 
 .contact .text{
-    margin-top: 100px;
+    margin-top: 130px;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -148,11 +156,11 @@
 }
 
 .contact .text .address{
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 .contact hr{
     position: relative;
-    top: 85%;
+    top:  93%;
     border: .1em solid rgb(235, 235, 235);
 }

@@ -11,11 +11,6 @@
     clip-path: polygon(0% 0% , 0% 100% , 100% 80vh , 100% 0%); 
 }
 
-.header .nav-bar{
-    position: relative;
-    top: 0;
-}
-
 .header .top {
     position: absolute;
     top: 30%;

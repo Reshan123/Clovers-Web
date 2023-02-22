@@ -9,83 +9,55 @@
     background-size: cover;
     color: rgb(255, 255, 255);
     clip-path: polygon(0% 0% , 0% 100% , 100% 80vh , 100% 0%); 
-}
-
-.header .top {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* border: 5px solid black; */
-    width: 80vw;
-    height: auto;
-    z-index: 5;
-}
-
-.header .top .header-img{
-    width: 4em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%,-50%);
-    z-index: 5;
-    /* border: 5px solid black; */
-    
-}
-
-
-.header .top .main-heading{
-    margin: auto;
-    transform: translate(0%,0%);
     display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.header .main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 70vw;
     font-size: 3em;
-    word-spacing: 8px;
     font-weight: 1000;
     /* border: 5px solid black; */
-    z-index: 5;
-}
-/* .header .top .main-heading .part1 {
     overflow: hidden; 
     white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: 0em;
-    animation: 
-        typing 3.5s steps(40, end)
-}
-.header .top .main-heading .part2{
-    overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: 0em;
-    animation: 
-        typing 3.5s steps(40, end)
-} */
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    margin: 0; 
+    letter-spacing: 0;
+    animation: main-typing 3.5s ease-in-out;  
 }
 
 .header .sub-heading {
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, 0%);
     overflow: hidden; 
     white-space: nowrap; 
-    margin: 0 auto; 
+    margin: 0; 
     letter-spacing: 0;
-    animation: 
-        typing 5s steps(100, end)
-}
-
-.header .sub-heading p{
+    border-right: .15em solid rgb(55, 224, 40);
+    
     font-size: 2em;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 100;
+    animation: 
+        sub-typing 3.5s steps(150),
+        blink-caret .5s step-end infinite;
+}
 
+@keyframes main-typing {
+    from { opacity: 0; }
+    to { opacity: 100% }
+}
+@keyframes sub-typing {
+    from { width: 0 }
+    to { width: 51vw }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(59, 192, 46); }
 }
 
 .mid{
@@ -143,7 +115,7 @@
     font-size: 3em;
     font-weight: 650;
     background-clip: border-box;
-    background:linear-gradient(45deg,rgb(43, 255, 0),rgb(0, 255, 213));
+    background:linear-gradient(270deg,rgb(84, 238, 54),rgb(33, 238, 118));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;    
 }

@@ -9,6 +9,7 @@ body{
 
 a{
     text-decoration: none;
+    padding: 5px 10px;
 }
 .nav-bar{
     border-bottom-left-radius: .7em;
@@ -29,15 +30,18 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 5em;
 }
+
 .nav-bar .items a{
     display: block;
     color: rgb(116, 116, 116);
-    margin: 25px 20px;
 }
 
 .nav-bar .items .logo img{
-    margin: 0px 150px;
     height: 60px;
+}
+
+.current-page{
+    border-bottom: 2.5px solid rgb(120, 240, 51);
 }

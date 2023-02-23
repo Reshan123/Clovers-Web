@@ -25,11 +25,32 @@
     font-size: 3em;
     font-weight: 1000;
     /* border: 5px solid black; */
+    overflow: hidden;
+}
+
+.header .main-heading .part1{
     overflow: hidden; 
     white-space: nowrap; 
     margin: 0; 
     letter-spacing: 0;
-    animation: main-typing 3.5s ease-in-out;  
+    animation: main-typing-part1 3.5s ease-in-out ;  
+}
+
+.header .main-heading .part2{
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: 0;
+    animation: main-typing-part2 3.5s ease-in-out both;  
+}
+
+.header .main-heading .header-img{
+    overflow: hidden; 
+    /* white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: 0; */
+    animation: image 2.5s ease-in both ;
+    animation-delay: 2.55s;  
 }
 
 .header .sub-heading {
@@ -47,9 +68,13 @@
         blink-caret .5s step-end infinite;
 }
 
-@keyframes main-typing {
-    from { opacity: 0; }
-    to { opacity: 100% }
+@keyframes main-typing-part1 {
+    0% { border-right: 30vw transparent solid; }
+    100% { border-right: 0vw transparent solid; }
+}
+@keyframes main-typing-part2 {
+    0% { border-left: 35vw transparent solid; }
+    100% { border-left: 0vw transparent solid; }
 }
 @keyframes sub-typing {
     from { width: 0 }
@@ -58,6 +83,14 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(59, 192, 46); }
+}
+@keyframes image {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
 }
 
 .mid{

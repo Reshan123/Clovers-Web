@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
 }
 
 .header .main-heading {
@@ -44,7 +44,8 @@
     animation: main-typing-part2 3.5s ease-in-out both;  
 }
 
-.header .main-heading .header-img{
+.header .main-heading .header-img img{
+    height: 1.5em;
     overflow: hidden; 
     /* white-space: nowrap; 
     margin: 0; 

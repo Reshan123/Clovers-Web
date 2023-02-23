@@ -73,8 +73,8 @@
     100% { border-right: 0vw transparent solid; }
 }
 @keyframes main-typing-part2 {
-    0% { border-left: 35vw transparent solid; }
-    100% { border-left: 0vw transparent solid; }
+    0% { border-right: 35vw transparent solid; }
+    100% { border-right: 0vw transparent solid; }
 }
 @keyframes sub-typing {
     from { width: 0 }

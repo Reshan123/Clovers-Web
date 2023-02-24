@@ -38,6 +38,10 @@ a{
     color: rgb(116, 116, 116);
 }
 
+.nav-bar .items a:hover{
+    border-bottom: 2.5px solid rgb(120, 240, 51);
+}
+
 .nav-bar .items .logo img{
     height: 60px;
 }

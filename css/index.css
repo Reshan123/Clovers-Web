@@ -95,8 +95,9 @@
 }
 
 .mid{
-    height: 2000px;
-    margin-top: 25px;
+    margin:25px;
+    margin-bottom:75px;
+
 }
 
 .mid .top-hr hr{

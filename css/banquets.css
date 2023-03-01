@@ -4,3 +4,13 @@
     background-size: cover;
     background-position: center;
 }
+
+.container{
+    width: 50vw;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.container .card .sub-heading{
+    
+}

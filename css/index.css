@@ -20,55 +20,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2em;
     width: 72vw;
     font-size: 3em;
     font-weight: 1000;
     /* border: 5px solid black; */
-    overflow: hidden;
-}
-
-.header .main-heading .part1{
-    overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0; 
-    letter-spacing: 0;
-    animation: main-typing-part1 3.5s ease-in-out ;  
-}
-
-.header .main-heading .part2{
-    overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0; 
-    letter-spacing: 0;
-    animation: main-typing-part2 3.5s ease-in-out both;  
 }
 
 .header .main-heading .header-img img{
     height: 1.5em;
-    overflow: hidden; 
-    /* white-space: nowrap; 
-    margin: 0; 
-    letter-spacing: 0; */
-    animation: image 2.5s ease-in both ;
-    animation-delay: 2.55s;  
 }
 
 .header .sub-heading {
-    overflow: hidden; 
-    white-space: nowrap; 
     margin: 0; 
     letter-spacing: 0;
     border-right: .15em solid rgb(55, 224, 40);
-    
     font-size: 2em;
     text-align: center;
-    font-weight: 100;
+    font-weight: 100;   
+}
+
+.animation-main-part1{
+    animation: main-typing-part1 3.5s ease-in-out ;  
+}
+.animation-main-part2{
+    animation: main-typing-part2 3.5s ease-in-out both;  
+}
+.animation-header-img{
+    animation: image 2.5s ease-in both ;
+    animation-delay: 2.55s;  
+}
+.animation-sub-heading{
     animation: 
         sub-typing 3.5s steps(150),
         blink-caret .5s step-end infinite;
 }
-
 @keyframes main-typing-part1 {
     0% { border-right: 30vw transparent solid; }
     100% { border-right: 0vw transparent solid; }
@@ -93,6 +80,7 @@
         opacity: 100%;
     }
 }
+
 
 .mid{
     margin:25px;
